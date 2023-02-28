@@ -40,7 +40,7 @@ window.addEventListener("keydown",my_keydown);
 function my_keydown(e){
     keyPressed=e.keyCode;
     console.log(keyPressed);
-if(e.shiftKey==true && e.keyPressed=='80')
+if(e.shiftKey==true && keyPressed=='80')
 { 
 console.log("Se presiona p y shift al mismo tiempo");
 block_image_width= block_image_width+10;
@@ -49,7 +49,7 @@ document.getElementById("currentWidth").innerHTML=block_image_width;
 document.getElementById("currentHeight").innerHTML=block_image_height;
 }
 
-if(e.shiftKey==true && e.keyPressed=='77')
+if(e.shiftKey==true && keyPressed=='77')
 { 
 console.log("Se presiona m y shift al mismo tiempo");
 block_image_width= block_image_width-10;
